@@ -1,12 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace TextEditor
@@ -27,8 +20,6 @@ namespace TextEditor
         private string TheTextFileName;
         private string OriginalFileText;
         private bool NewDocument;
-
-
 
         private void ExitMenu1_Click(object sender, EventArgs e)
         {
@@ -59,7 +50,6 @@ namespace TextEditor
                     
                     TheTextFileName = OpenFileDialog1.FileName;
                     NewDocument = false;
-                    //Text = string.Format("{0} - {1}", FormName, TheTextFileName);
                 }
                 catch (Exception ex)
                 {
